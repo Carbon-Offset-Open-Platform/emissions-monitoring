@@ -1,6 +1,6 @@
 # ReadFish collector test
 
-![](highLevelDiagram.svg)
+![](images/highLevelDiagram.svg)
 
 ## Steps
 1. `podman pull docker.io/dmtf/redfish-mockup-server:latest`
@@ -17,5 +17,11 @@ curl -v http://localhost:8080/redfish/v1/Chassis/1U/PowerSubsystem
 ```
 
 # References
-https://github.com/DMTF/Redfish-Mockup-Server
-https://github.com/DMTF/Redfish-Mockup-Creator
+
+## Redfish
+* https://github.com/DMTF/Redfish-Mockup-Server
+* https://github.com/DMTF/Redfish-Mockup-Creator
+
+## Coding
+https://docs.python-guide.org/writing/structure/
+
