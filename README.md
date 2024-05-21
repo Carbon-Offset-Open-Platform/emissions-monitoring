@@ -15,6 +15,14 @@ curl -v http://localhost:8080/redfish/v1/Chassis
 curl -v http://localhost:8080/redfish/v1/Chassis/1U
 curl -v http://localhost:8080/redfish/v1/Chassis/1U/PowerSubsystem
 ```
+# Contribute
+
+``` bash
+python -m venv venv
+source venv/bin/activate
+make
+make test
+```
 
 # References
 
