@@ -1,4 +1,5 @@
-from .context import redfish_aggregator
+from .context import redfishaggregator
+from redfishaggregator import helpers
 import pytest
 
 def test_get_requested_watts():
@@ -45,7 +46,7 @@ def test_get_requested_watts():
     }
 
     # Test case
-    assert get_requested_watts(sample_data) == 1500
+    assert helpers.get_requested_watts(sample_data) == 1500
 
 if __name__ == "__main__":
     pytest.main()
