@@ -1,1 +1,1 @@
-from .core import redfishaggregator
+from .core import redfish_aggregator
