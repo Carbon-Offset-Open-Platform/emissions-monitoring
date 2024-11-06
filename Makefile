@@ -3,3 +3,6 @@ init:
 
 test:
 	pytest tests
+
+lint:
+	flake8 ./tests ./redfishaggregator
