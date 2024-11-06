@@ -1,0 +1,28 @@
+name: Run Tests on Commit
+
+on:
+  push:
+    branches:
+      - '**'  # Run on every branch
+  pull_request:
+    branches:
+      - '**'  # Run on every pull request
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # Specify your Python version
+
+      - name: Install dependencies
+        run: make
+
+      - name: Run tests
+        run: make test
